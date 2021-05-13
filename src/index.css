@@ -1,3 +1,11 @@
+:root {
+  --header-footer-background-color: #1c1c1c;
+  --emoticon-hover-background-color: #2c2c2c;
+  --emoticon-background-color: #1c1c1c;
+  --body-background-color: #141414;
+  --body-color: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +13,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+  color: #800080;
 }
 
 code {
