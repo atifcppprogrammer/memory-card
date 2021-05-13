@@ -1,0 +1,32 @@
+@keyframes scale-out {
+  from { 
+    background-color: var(--emoticon-background-color);
+    transform: scale(1) 
+  }
+  to { 
+    background-color: var(--emoticon-hover-background-color);
+    transform: scale(1.1) 
+  }
+}
+
+div.em-container {
+  background-color: var(--emoticon-background-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 40%;
+}
+div.em-container:hover{
+  animation: scale-out 0.3s ease-in-out 0s 1 forwards;
+}
+
+div.em-container > img {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  div.em-container {
+    width: 50%;
+  }
+}
